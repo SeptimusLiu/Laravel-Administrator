@@ -204,7 +204,7 @@
 				<!-- ko if: editable -->
 					<div class="upload_container" data-bind="attr: {id: field_id}">
 						<div class="uploader" data-bind="attr: {disabled: $root.freezeForm, id: field_name + '_uploader'}, value: $root.activeItem,
-												fileupload: {field: field_name, size_limit: size_limit, uploading: uploading, image: true,
+												fileupload: {field: field_name, size_limit: size_limit, uploading: uploading, 
 															upload_percentage: upload_percentage, upload_url: upload_url}">
 																<?php echo trans('administrator::administrator.uploadimage') ?></div>
 						<!-- ko if: uploading -->

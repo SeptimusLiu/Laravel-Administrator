@@ -31,7 +31,7 @@ class Image extends File {
 	public function doUpload()
 	{
 		//use the multup library to perform the upload
-		$result = Multup::open('file', 'image|max:' . $this->getOption('size_limit') * 1000, $this->getOption('location'),
+		$result = Multup::open('file', 'max:' . $this->getOption('size_limit') * 1000, $this->getOption('location'),
 									$this->getOption('naming') === 'random')
 			->sizes($this->getOption('sizes'))
 			->set_length($this->getOption('length'))
